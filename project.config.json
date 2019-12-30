@@ -1,20 +1,25 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"enhance": true
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
-	"appid": "wx9873c81b23b3acb3",
-	"projectname": "CCM",
-	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -36,31 +41,32 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "cardList",
-					"pathName": "pages/cardList/cardList",
+					"name": "pages/welcome/welcome",
+					"pathName": "pages/welcome/welcome",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/addCard/addCard",
+					"id": 1,
+					"name": "posts",
+					"pathName": "pages/posts/posts",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "addCard",
 					"pathName": "pages/addCard/addCard",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 3,
-					"name": "cardlist",
+					"id": -1,
+					"name": "cardList",
 					"pathName": "pages/cardList/cardList",
 					"query": "",
 					"scene": null
