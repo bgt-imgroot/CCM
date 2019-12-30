@@ -20,6 +20,8 @@
 	},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"appid": "wx9873c81b23b3acb3",
+	"projectname": "CCM",
 	"condition": {
 		"search": {
 			"current": -1,
