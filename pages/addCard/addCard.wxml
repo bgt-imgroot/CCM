@@ -1,0 +1,61 @@
+<view>
+    <form bindsubmit="forsubmit" bindreset="forreset">
+        <view hidden="true">
+            <input name="id_" value="{{id_}}"></input>
+        </view>
+        <view>
+            <view>信用卡</view>
+            <input name='name' auto-focus="true" value="{{name}}" type="text"></input>
+        </view>
+        <view>
+            <view>卡号</view>
+            <input hold-keyboard="true" name='number' value="{{number}}" type="text"></input>
+        </view>
+        <view>
+            <view>额度</view>
+            <input hold-keyboard="true" type="number" value="{{limit}}" name='limit'></input>
+        </view>
+        <view>
+            <view>账单日</view>
+            <input hold-keyboard="true" type="number" value="{{billday}}" name='billday'></input>
+        </view>
+        <view>
+            <view>还款日固定?</view>
+            <view>
+                <switch name="paydayFixed" checked="{{paydayFixed}}" bindchange="paydayFixedChange" />
+            </view>
+        </view>
+        <view wx:if="{{paydayFixed}}">
+            <view>还款日</view>
+            <input hold-keyboard="true" type="number" value="{{payday}}" name='payday'></input>
+        </view>
+
+        <!-- if the payday not fixed,then input a delay day number,means how many days is the payday after billday -->
+        <view wx:if="{{!paydayFixed}}">
+            <view>几天还?</view>
+            <input hold-keyboard="true" type="number" value="{{paydaydelay}}" name='paydaydelay'></input>
+        </view>
+        <view>
+            <view>临时额度</view>
+            <input hold-keyboard="true" type="number" value="{{templimit}}" bindblur="templimitdone" name='templimit'></input>
+        </view>
+
+        <view wx:if="{{templimit > 0}}">
+            <view>临额到期日</view>
+            <picker mode="date" value="{{templimitDuedate}}" start="2015-09-01" end="2099-12-31" name="templimitDuedate" bindchange="bindDateChange">
+                <view class="datechose">
+                    {{templimitDuedate}}
+                </view>
+            </picker>
+        </view>
+
+        <view>
+            <view>备注</view>
+            <textarea hold-keyboard="true" adjust-position="true" placeholder="remark..." value="{{remark}}" name="remark" />
+        </view>
+
+        <button class="btnarea" type="primary" form-type="submit">提交</button>
+
+
+    </form>
+</view>

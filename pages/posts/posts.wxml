@@ -1,0 +1,27 @@
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="4000">
+        <swiper-item><image src="/images/wx.png"></image></swiper-item>
+         <swiper-item><image src="/images/vr.png"></image></swiper-item>
+          <swiper-item><image src="/images/iqiyi.png"></image></swiper-item>
+    </swiper>
+<block wx:key="key" wx:for="{{post_key}}">
+    <view class="post-container">
+        <view class="post-author-date"> 
+            <image class="post-author" src="{{item.postauthor}}"></image>
+            <text class="post-date">{{item.postdate}}</text>
+        </view>
+        <text class="post-title">{{item.posttitle}}</text>
+        <image class="post-image" src="{{item.postimage}}"></image>
+        <text class="post-content">{{item.postcontent}}</text>
+        <view class="post-like">
+            <image class="post-like-image" src="/images/icon/chat.png"></image>
+            <text class="post-like-font">{{item.likenum}}</text>       
+            <image class="post-like-image" src="/images/icon/view.png"></image>
+            <text class="post-like-font">{{item.viewnum}}</text>     
+        </view>
+    </view>
+</block>
+
+</view>
+
+

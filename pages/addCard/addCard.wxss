@@ -1,0 +1,27 @@
+
+page{
+    background-color: #b3d4db;
+    height: 100%;
+}
+input{
+    border: 1px black solid
+}
+switch{
+    border: 1px rgb(218, 164, 19) solid
+}
+textarea{
+    border: 1px black solid
+}
+.btnarea{
+    margin-top: 2%;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+.datechose{
+    border: 1px black solid
+}
+view{
+    margin-left: 2%;
+}

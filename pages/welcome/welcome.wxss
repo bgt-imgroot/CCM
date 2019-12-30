@@ -1,0 +1,38 @@
+page{
+    background-color: #b3d4db;
+    height: 100%;
+}
+.content{
+    display: flex;/*弹性盒子模型*/
+    flex-direction: column;/*垂直分布*/
+    align-items: center;/*居中分布*/
+    
+}
+.user-name{
+    margin-top: 100rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    /* font-family: MicroSoft Yahei;默认字体和开发工具所运行的系统有关,所以不用在意 */
+}
+.moto{
+    font-size: 22rpx;
+    font-weight: bold;
+    /* font-family: MicroSoft Yahei;默认字体和开发工具所运行的系统有关,所以不用在意 */
+    line-height: 80rpx;/*行高设置和容器高度一样以实现水平居中,亦可通过flex布局实现,思考*/
+}
+.moto-container{
+    border: 1px solid #405f80;
+    height: 80rpx;
+    width: 200rpx;
+    border-radius: 5px;/*圆角*/
+    text-align: center;
+    margin-top: 200rpx;
+
+}
+.touxiang{
+    width:200rpx;
+    height:200rpx;
+    margin-top: 160rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
