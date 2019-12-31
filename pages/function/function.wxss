@@ -1,0 +1,22 @@
+.btnarea{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    height: 200rpx;
+}
+.btnleft{
+    width: 49%;
+    height: 100%;
+    
+}
+.btnright{
+    margin-left: 1%;
+    width: 49%;
+    height: 100%;
+}
+text{
+    align-self: center;
+    font-size: 40px;
+    margin-top: 20%;
+    color: rgb(212, 165, 36);
+}

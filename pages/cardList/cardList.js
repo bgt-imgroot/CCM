@@ -11,7 +11,9 @@ Page({
         var this_=this
         wx.cloud.init()
         const db = wx.cloud.database()
-        db.collection('tb_card').get({
+        db.collection('tb_card').where({
+            _openid: 'user-open-id'
+        }).get({
             success: function (res) {
                 // res.data 包含该记录的数据
                 console.log(res.data)

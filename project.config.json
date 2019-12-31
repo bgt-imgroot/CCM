@@ -1,6 +1,6 @@
 {
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -71,6 +71,19 @@
 					"name": "cardList",
 					"pathName": "pages/cardList/cardList",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "function",
+					"pathName": "pages/function/function",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "expense",
+					"pathName": "pages/function/expense/expense",
 					"scene": null
 				}
 			]

@@ -3,7 +3,9 @@
         "pages/welcome/welcome",
         "pages/posts/posts",
         "pages/addCard/addCard",
-        "pages/cardList/cardList"
+        "pages/cardList/cardList",
+        "pages/function/function",
+        "pages/function/expense/expense"
     ],
     "sitemapLocation": "sitemap.json",
     "window": {

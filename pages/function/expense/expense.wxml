@@ -1,0 +1,44 @@
+<view>
+<form bindsubmit="submit">
+    <view>
+        <view class="title">消费类型</view>
+    </view>
+    <view>
+        <view>
+            <radio-group bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                    <text>{{item.value}}</text>
+                </radio>
+            </radio-group>
+        </view>
+    </view>
+
+    <view>
+        <view class="title">消费途径</view>
+        <view>
+            <view>
+                <radio-group bindchange="wayradioChange">
+                    <radio class="radio" wx:for-items="{{expenseWayitems}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                        <text>{{item.value}}</text>
+                    </radio>
+                </radio-group>
+            </view>
+        </view>
+    </view>
+    <view>
+        <view class="title">消费金额</view>
+        <view class="slider">
+        <!-- <input style="border:1px solid green;" type="number" name="expenseNumber"></input> -->
+        <text catchtap="reduce" style="margin-left:1%;font-size:60rpx;">-</text><slider style="width:80%" min='-999' max="999" value="{{expenseNumber}}" selected-color="red" backgroundColor="#09BB07" block-size='28' block-color="#09BB07" show-value="true" bindchange="onChangeTheNumber"></slider><text style="font-size:60rpx;" catchtap="add">+</text></view>
+    </view>
+
+    <view>
+        <view class="title">备注</view>
+        <textarea bindconfirm="remarkConfirm" style="border:solid 1px black;width:95%;margin-left:4%;" name="remark" maxlength="500" auto-focus="true" auto-height="ture" placeholder="还想记点啥..."></textarea>
+    </view>
+
+    <view>
+    <button style="margin-top:50%;width:50%;" form-type="submit" type="primary">保存</button>
+    </view>
+    </form>
+</view>

@@ -1,12 +1,22 @@
 <view class="content">
     <!-- <image class="touxiang" src="/images/avatar/1.png"></image> -->
     <open-data class="touxiang" type="userAvatarUrl"></open-data>
-    <text class="user-name">Hello </text><open-data type="userNickName" lang="zh_CN"></open-data>
+    <text class="user-name">Hello </text>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
     <view bindtap="begin" class="moto-container">
-        <text class="moto">movie</text>
+        <text class="moto">news</text>
     </view>
     <view bindtap="addcard" class="moto-container">
         <text class="moto">addcard</text>
     </view>
-    
+    <view bindtap="cardList" class="moto-container">
+        <text class="moto">cardList</text>
+    </view>
+    <view bindtap="tofunctions" class="moto-container">
+        <text class="moto">功能列表</text>
+    </view>
+    <!-- <view bindtap="login" class="moto-container">
+        <text class="moto">登陆</text>
+    </view> -->
+
 </view>

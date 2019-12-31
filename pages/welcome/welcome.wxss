@@ -26,7 +26,7 @@ page{
     width: 200rpx;
     border-radius: 5px;/*圆角*/
     text-align: center;
-    margin-top: 200rpx;
+    margin-top: 50rpx;
 
 }
 .touxiang{

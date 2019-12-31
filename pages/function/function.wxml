@@ -1,0 +1,37 @@
+<view>
+    <form>
+        <view class="btnarea">
+            <button type="primary" class="btnleft">
+                <text>记收入</text>
+            </button>
+            <button type="primary" catchtap="recordExpense" class="btnright">
+                <text>记消费</text>
+            </button>
+        </view>
+        <view class="btnarea">
+            <button type="primary" class="btnleft">
+                <text>记油耗</text>
+            </button>
+            <button type="primary" class="btnright">
+                <text>记刷卡</text>
+            </button>
+        </view>
+        <view class="btnarea">
+            <button type="primary" class="btnleft">
+                <text>记AAA</text>
+            </button>
+            <button type="primary" class="btnright">
+                <text>记AAA</text>
+            </button>
+        </view>
+        <view class="btnarea">
+            <button type="primary" class="btnleft">
+                <text>记AAA</text>
+            </button>
+            <button type="primary" class="btnright">
+                <text>记AAA</text>
+            </button>
+        </view>
+
+    </form>
+</view>
